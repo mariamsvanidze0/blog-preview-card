@@ -1,0 +1,140 @@
+@font-face {
+    font-family: font ;
+    src: url(./assets/fonts/Figtree-VariableFont_wght.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: font;
+}
+body {
+    background-color: hsl(47, 88%, 63%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+    
+}
+.card-div {
+    display: grid;
+    gap: 20px;
+    background-color: hsl(0, 0%, 100%);
+    align-items: center;
+    text-align: left;
+    padding: 20px;
+    border-radius: 15px;
+    border: 2px solid black;
+    box-shadow: 8px 8px 0px black;
+    max-width: 360px ;
+}
+.card-div:hover #active-link {
+    color: hsl(47, 88%, 63%);
+}
+#illustration {
+    width: 100%;
+    border-radius: 8px;
+}
+.card-div button {
+    width: 100%;
+    max-width: 85px;
+    font-weight: bold;
+    padding: 5px 3px 5px 3px;
+    background-color:hsl(47, 88%, 63%) ;
+    border: none;
+    border-radius: 3px;
+}
+.card-div h5 {
+    font-weight: light;
+    font-size: 8px;
+    color: hsl(0, 0%, 7%);
+}
+.card-div a {
+    font-size: 20px;
+    text-decoration: none;
+    color: hsl(0, 0%, 7%);
+    font-weight: bolder;
+}
+.card-div p {
+    font-size: 16px;
+    color: hsl(0, 0%, 42%);
+}
+.avatar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.avatar img {
+    width: 30px;
+}
+.avatar a {
+    text-decoration: none;
+    color:  hsl(0, 0%, 7%);
+    font-weight: bold;
+    font-size: 13px;
+}
+.attribution {
+    margin-top: 100px;
+}
+.attribution a {
+    text-decoration: none;
+    color:  hsl(0, 0%, 7%);
+    font-weight: bold;
+    font-size: 13px;
+}
+
+@media (max-width: 375px) {
+    .card-div {
+        max-width: 100%;
+        padding: 15px;
+        gap: 15px;
+    }
+    .card-div h5 {
+        font-size: 10px;
+    }
+
+    .card-div a {
+        font-size: 18px;
+    }
+
+    .card-div p {
+        font-size: 14px;
+    }
+
+    .avatar img {
+        width: 25px;
+    }
+
+    .avatar a {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .card-div {
+        max-width: 400px;
+        padding: 25px;
+        gap: 25px;
+    }
+    .card-div h5 {
+        font-size: 10px;
+    }
+
+    .card-div a {
+        font-size: 22px;
+    }
+
+    .card-div p {
+        font-size: 18px;
+    }
+
+    .avatar img {
+        width: 35px;
+    }
+
+    .avatar a {
+        font-size: 15px;
+    }
+}
